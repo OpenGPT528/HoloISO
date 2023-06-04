@@ -1,0 +1,11 @@
+#!/bin/zsh
+# Should be ran everytime user logs into desktop
+
+# Remove shortcuts to be safe
+sudo rm /home/$USER/Desktop/steamos-gamemode.desktop
+
+# Copy actual shortcuts in:
+sudo cp /etc/skel/Desktop/steamos-gamemode.desktop /home/$USER/Desktop/steamos-gamemode.desktop
+
+# Permissions
+sudo chmod +x /home/$USER/Desktop/steamos-gamemode.desktop
